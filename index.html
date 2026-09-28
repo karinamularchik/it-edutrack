@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>IT EduTrack — Платформа обучения</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">🎓</span>
+        IT EduTrack
+      </a>
+
+      <button id="menuToggleBtn" class="burger-btn" aria-label="Открыть меню">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+
+      <nav id="siteNav" class="site-nav">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link">Главная</a></li>
+          <li><a href="#features" class="nav-link">Преимущества</a></li>
+          <li><a href="#courses" class="nav-link">Курсы</a></li>
+          <li><button id="loginBtn" class="btn btn-sm btn-primary">Войти</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <section id="hero" class="screen-section hero-section">
+      <div class="hero-content">
+        <span class="badge">Учебный трекер</span>
+        <h1 class="hero-title">Управляйте обучением без лишней суеты</h1>
+        <p class="hero-text">
+          Платформа для отслеживания задач, сдачи лабораторных работ и связи с преподавателями.
+        </p>
+        <div class="hero-actions">
+          <a href="#courses" class="btn btn-primary nav-link">Выбрать курс</a>
+          <button id="demoBtn" class="btn btn-secondary">Демо-доступ</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="screen-section">
+      <div class="section-header">
+        <h2 class="section-title">Как это работает</h2>
+        <p class="section-subtitle">Простые инструменты для постоянного прогресса</p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon">☕</div>
+          <h3>Свой темп</h3>
+          <p>Сдавайте задания по понятной сетке без хаоса и непонятных требований.</p>
+          <button class="btn btn-card-action">Подробнее</button>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Наглядный статус</h3>
+          <p>Все отметки, проверки и комментарии преподавателя собраны в одном месте.</p>
+          <button class="btn btn-card-action">Подробнее</button>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>Обратная связь</h3>
+          <p>Разбор ошибок и ответы на вопросы прямо в карточке вашей работы.</p>
+          <button class="btn btn-card-action">Подробнее</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="courses" class="screen-section">
+      <div class="section-header">
+        <h2 class="section-title">Доступные программы</h2>
+        <p class="section-subtitle">Выберите дисциплину и перейдите к заданиям</p>
+      </div>
+
+      <div class="courses-grid">
+        <article class="course-card">
+          <div class="card-tag">Frontend</div>
+          <h3>Веб-разработка &amp; Mobile First</h3>
+          <p>Верстка, CSS Flexbox, основы JavaScript и создание адаптивных страниц.</p>
+          <div class="card-footer">
+            <span class="price">Бесплатно</span>
+            <button class="btn btn-sm enroll-btn">Записаться</button>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="card-tag">Backend</div>
+          <h3>Базы данных и серверная логика</h3>
+          <p>Проектирование баз данных, создание простыx API и работа с сервером.</p>
+          <div class="card-footer">
+            <span class="price">Бесплатно</span>
+            <button class="btn btn-sm enroll-btn">Записаться</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="modal" class="modal-overlay">
+    <div class="modal-window">
+      <button id="modalClose" class="modal-close">&times;</button>
+      <h3 id="modalTitle">Запись</h3>
+      <p id="modalDescription">Заполните форму, чтобы получить доступ.</p>
+      <form id="enrollForm" class="modal-form">
+        <input type="text" placeholder="Имя" required class="form-input">
+        <input type="email" placeholder="Email" required class="form-input">
+        <button type="submit" class="btn btn-primary">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>© 2026 IT EduTrack.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
